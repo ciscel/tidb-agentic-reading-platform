@@ -3,6 +3,12 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+.env
+
+    git rm --cached .env
+    git commit -m "Remove .env file from version control"
+    git push origin main # or your main branch name
+
 # User-specific files
 *.rsuser
 *.suo
