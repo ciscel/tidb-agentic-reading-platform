@@ -1,5 +1,6 @@
 import os
 from pydantic import BaseSettings
+from typing import Optional
 
 class Settings(BaseSettings):
     TIDB_USER: str
@@ -7,6 +8,7 @@ class Settings(BaseSettings):
     TIDB_HOST: str
     TIDB_PORT: int
     TIDB_DB: str
+    TIDB_SSL_CA_PATH: Optional[str] = None
     DATABASE_URL: str = ""
 
     class Config:
